@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <link rel="canonical" href="https://lucaspdroz.github.io/PWA-GithubPages/" />
+    <style type="text/css">
+        /* --- application CSS here --- */
+        * {
+            background-color: #F5F4F0;
+            font-family: Georgia, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Content</h1>
+    <script>
+        // register ServiceWorker, remember to use absolute path!
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('/PWA-GithubPages/sw.js', { scope: '/PWA-GithubPages/' })
+        }
+
+  // --- Application code here ---
+    </script>
+</body>
+
+</html>
